@@ -549,7 +549,7 @@ function getVenueShortName(venueStr, year) {
     let s = venueStr.replace(/\d{4}/g, '').trim();
     let suffix = '';
 
-    const conferences = ['NeurIPS', 'CVPR', 'ICCV', 'ECCV', 'ICRA', 'AAAI', 'GLOBECOM', 'INFOCOM', 'MOBICOM'];
+    const conferences = ['NeurIPS', 'ICML', 'CVPR', 'ICCV', 'ECCV', 'ICRA', 'AAAI', 'GLOBECOM', 'INFOCOM', 'MOBICOM'];
     for (const conf of conferences) {
         if (s.includes(conf)) {
             if (year) {
@@ -593,6 +593,7 @@ function getVenueFullName(venueStr) {
     if (s.includes('LNET') || s.includes('LNet')) return 'IEEE Networking Letters';
 
     if (s.includes('NeurIPS')) return 'Annual Conference on Neural Information Processing Systems';
+    if (s.includes('ICML')) return 'International Conference on Machine Learning';
     if (s.includes('CVPR')) return 'IEEE/CVF Conference on Computer Vision and Pattern Recognition';
     if (s.includes('ICCV')) return 'IEEE/CVF International Conference on Computer Vision';
     if (s.includes('ECCV')) return 'European Conference on Computer Vision';
