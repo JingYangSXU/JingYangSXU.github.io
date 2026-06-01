@@ -1,14 +1,46 @@
 [
   {
-    "date": "2025-01-01",
-    "content": "Welcome to my new academic homepage! This template is available on GitHub.",
-    "links": [
-        { "text": "GitHub", "url": "https://github.com/yihangtao/AcaNova-X" }
-    ]
+    "date": "2026.01",
+    "content": "Our paper on edge-guided semi-supervised 6D pose estimation has been accepted by <strong>Expert Systems With Applications</strong>!"
   },
   {
-     "date": "2024-12-15",
-     "content": "One paper titled 'A Novel Approach to AI' was accepted to CVPR 2025!",
-     "links": []
+    "date": "2025.05",
+    "content": "Our robotic grasping work \"Occlusion-aware 6D Pose Estimation...\" has been accepted by <strong>ICRA 2025</strong>! See you in Atlanta."
+  },
+  {
+    "date": "2025.01",
+    "content": "Dr. Yang Jing got 1 Principal Investigator (PI) project granted from the <strong>National Natural Science Foundation of China (NSFC)</strong>, focusing on spatial-spectral fusion for hyperspectral images."
+  },
+  {
+    "date": "2025.01",
+    "content": "Two papers on nonconvex tensor representation and deep unfolding tensor representation networks have been accepted by <strong>IEEE J-STARS</strong> and <strong>Remote Sensing</strong> respectively!"
+  },
+  {
+    "date": "2024.08",
+    "content": "Our paper \"Robotic Grasp Detection Using Structure Prior Attention...\" has been accepted by <strong>IEEE TSMC-S</strong>!"
+  },
+  {
+    "date": "2024.05",
+    "content": "Our research on clustering guided rule interpolation for ANFIS construction has been accepted by <strong>FUZZ-IEEE 2024</strong>!"
+  },
+  {
+    "date": "2024.01",
+    "content": "Dr. Yang Jing stands as a key participant in a newly funded <strong>NSFC project</strong> focusing on robotic grasping optimization mechanisms under dynamic illumination."
+  },
+  {
+    "date": "2023.08",
+    "content": "Dr. Yang Jing successfully obtained a research grant from the <strong>Basic Research Program of Shanxi Province</strong> as Principal Investigator."
+  },
+  {
+    "date": "2023.01",
+    "content": "Our paper on hierarchical spatio-spectral fusion via sparse representation has been accepted by <strong>Knowledge-Based Systems</strong>!"
+  },
+  {
+    "date": "2022.05",
+    "content": "Our paper \"Constructing ANFIS with Sparse Data through Group-Based Rule Interpolation...\" has been accepted by <strong>IEEE Transactions on Fuzzy Systems</strong>!"
+  },
+  {
+    "date": "2021.01",
+    "content": "Our collaborative work on ANFIS construction has been published in <strong>IEEE Transactions on Cybernetics</strong>!"
   }
 ]

@@ -298,12 +298,43 @@ function createPublicationItem(pub) {
         line3.appendChild(venueTag);
     }
 
+    // const badgeText = getHighlightBadge(pub.highlight);
+    // if (badgeText) {
+    //     const badge = document.createElement('span');
+    //     badge.className = 'pub-badge-highlight';
+    //     badge.textContent = badgeText;
+    //     line3.appendChild(badge);
+    // }
     const badgeText = getHighlightBadge(pub.highlight);
     if (badgeText) {
-        const badge = document.createElement('span');
-        badge.className = 'pub-badge-highlight';
-        badge.textContent = badgeText;
-        line3.appendChild(badge);
+        // 允许使用英文逗号 `,` 在 JSON 中隔开多个标签
+        const badges = badgeText.split(',');
+        badges.forEach(text => {
+            const trimmedText = text.trim();
+            if (trimmedText) {
+                const badge = document.createElement('span');
+
+                // 继承原模板的基础圓角和边距排版样式
+                badge.className = 'pub-badge-highlight';
+
+                // 转换为小写，方便统一判断
+                const lowerText = trimmedText.toLowerCase();
+
+                // 只要包含 1区、q1、q2，就自动通过原生 CSS 染成翡翠绿
+                if (lowerText.includes('Q1') || lowerText.includes('Q2')) {
+                    badge.style.backgroundColor = '#047857'; // 绿色：代表分区
+                } else {
+                    badge.style.backgroundColor = '#1e3a8a'; // 深蓝色：代表 Top 级别
+                }
+
+                // 强制指定白字与左外边距间距
+                badge.style.color = '#ffffff';
+                badge.style.marginLeft = '0.35rem';
+
+                badge.textContent = trimmedText;
+                line3.appendChild(badge);
+            }
+        });
     }
 
     content.appendChild(line3);
@@ -336,28 +367,64 @@ function createPublicationItem(pub) {
             content.appendChild(line4);
         }
     }
-
+    //
+    // item.appendChild(content);
+    //
+    // if (pub.thumbnail) {
+    //     const thumbBox = document.createElement('div');
+    //     thumbBox.className = 'pub-thumbnail-box';
+    //
+    //     const thumbImg = document.createElement('img');
+    //     const preferredThumbnail = getPreferredThumbnail(pub.thumbnail);
+    //     thumbImg.src = preferredThumbnail.primary;
+    //     thumbImg.alt = `${pub.title || 'Publication'} preview`;
+    //     thumbImg.loading = 'lazy';
+    //     thumbImg.onerror = function() {
+    //         if (this.src !== preferredThumbnail.fallback) {
+    //             this.onerror = null;
+    //             this.src = preferredThumbnail.fallback;
+    //         }
+    //     };
+    //
+    //     thumbBox.appendChild(thumbImg);
+    //     item.appendChild(thumbBox);
+    // }
+    //
+    // return item;
     item.appendChild(content);
 
-    if (pub.thumbnail) {
-        const thumbBox = document.createElement('div');
-        thumbBox.className = 'pub-thumbnail-box';
+    // 【核心修改】：无论有没有写 thumbnail，都统一生成图片框
+    const thumbBox = document.createElement('div');
+    thumbBox.className = 'pub-thumbnail-box';
 
-        const thumbImg = document.createElement('img');
+    const thumbImg = document.createElement('img');
+    thumbImg.loading = 'lazy';
+
+    if (pub.thumbnail) {
+        // 如果有自定义图片，走原来的动图优先逻辑
         const preferredThumbnail = getPreferredThumbnail(pub.thumbnail);
         thumbImg.src = preferredThumbnail.primary;
         thumbImg.alt = `${pub.title || 'Publication'} preview`;
-        thumbImg.loading = 'lazy';
         thumbImg.onerror = function() {
             if (this.src !== preferredThumbnail.fallback) {
                 this.onerror = null;
                 this.src = preferredThumbnail.fallback;
             }
         };
-
-        thumbBox.appendChild(thumbImg);
-        item.appendChild(thumbBox);
+    } else {
+        // 【核心修改】：如果没有自定义图片，自动加载我们在第一步准备好的通用默认图
+        // 使用内置的路径包装函数 normalizeAssetPath，确保在子页面中也能正确找到图片路径
+        thumbImg.src = normalizeAssetPath('assets/publications/default-thumb.png');
+        thumbImg.alt = 'Default publication preview';
+        thumbImg.onerror = function() {
+            this.onerror = null;
+            // 如果你连 default-thumb.png 都忘了放，这里做一个终极兜底，用一张网上的小卡片图
+            this.src = 'https://placehold.co/600x400/f8fafc/64748b?text=Research';
+        };
     }
+
+    thumbBox.appendChild(thumbImg);
+    item.appendChild(thumbBox);
 
     return item;
 }
@@ -509,15 +576,22 @@ function updateFilterButtons(filter) {
     }
 }
 
+// function getHighlightBadge(highlightText) {
+//     const text = String(highlightText || '').toLowerCase();
+//     if (text.includes('oral')) {
+//         return 'Oral';
+//     }
+//     if (text.includes('spotlight')) {
+//         return 'Spotlight';
+//     }
+//     return '';
+// }
 function getHighlightBadge(highlightText) {
-    const text = String(highlightText || '').toLowerCase();
-    if (text.includes('oral')) {
-        return 'Oral';
+    if (!highlightText) {
+        return '';
     }
-    if (text.includes('spotlight')) {
-        return 'Spotlight';
-    }
-    return '';
+    // 允许原封不动地返回 JSON 里的原始文本（如 "Top Journal, SCI Q1"）
+    return String(highlightText).trim();
 }
 
 function getPreferredThumbnail(thumbnailPath) {

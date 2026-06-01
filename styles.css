@@ -453,7 +453,7 @@ details summary {
 
 .pub-badge-highlight {
     display: inline-block;
-    background-color: #ef4444;
+    /*background-color: #ef4444;*/
     color: #ffffff;
     font-size: 0.75rem;
     font-weight: 700;
@@ -529,10 +529,17 @@ details summary {
     margin-bottom: 1.5rem;
 }
 
+/*.honor-year {*/
+/*    font-family: 'Courier New', Courier, monospace;*/
+/*    font-weight: 700;*/
+/*    font-size: 0.9rem;*/
+/*    color: #d4a562;*/
+/*    text-align: right;*/
+/*    white-space: nowrap;*/
+/*}*/
 .honor-year {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 700;
-    font-size: 0.9rem;
+    font-weight: 600;
+    font-size: 0.95rem;
     color: #d4a562;
     text-align: right;
     white-space: nowrap;

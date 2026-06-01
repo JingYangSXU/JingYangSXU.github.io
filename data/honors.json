@@ -1,12 +1,27 @@
 [
   {
-    "date": "2025",
-    "title": "Best Paper Award",
-    "org": "International Conference on Computer Vision (ICCV)"
+    "date": "2025 - 2027",
+    "title": "National Natural Science Foundation of China",
+    "description": "Principal Investigator. Research on fuzzy knowledge-guided and deep representation-driven spatial-spectral fusion for hyperspectral images."
   },
   {
-    "date": "2024",
-    "title": "Outstanding PhD Student Award",
-    "org": "Your University"
+    "date": "2023 - 2025",
+    "title": "Basic Research Program of Shanxi Province",
+    "description": "Principal Investigator. Research on spatial-spectral fusion for hyperspectral image super-resolution via sparse representation and fuzzy reasoning."
+  },
+  {
+    "date": "2023 - 2026",
+    "title": "Research Project Supported by Shanxi Scholarship Council",
+    "description": "Principal Investigator. Research on hyperspectral image super-resolution reconstruction based on fuzzy reasoning."
+  },
+  {
+    "date": "2024 - 2027",
+    "title": "National Natural Science Foundation of China",
+    "description": "Participant. Research on feature enhancement and optimization mechanism for robotic grasping under dynamic illumination."
+  },
+  {
+    "date": "2019 - 2022",
+    "title": "National Natural Science Foundation of China",
+    "description": "Participant. Research on lightweight 3D convolutional network construction and optimization for hyperspectral image classification."
   }
 ]

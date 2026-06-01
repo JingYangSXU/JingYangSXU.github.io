@@ -1,48 +1,210 @@
 [
   {
-    "title": "AcaNova-X: A Modern and Elegant Academic Website Template",
-    "displayTitle": "AcaNova-X: A Modern Academic Homepage with Featured Publications and Demo Preview Support",
-    "authors": "<strong>Your Name</strong>*, Collaborator A*, Collaborator B",
+    "title": "Learning Nonconvex Tensor Representation With Generalized Reweighted Sparse Regularization for Hyperspectral Anomaly Detection",
+    "authors": "<strong>Yang Jing</strong>, Zhao Jianbin, Chen Lu*, Geng Haijun, Zhang Pei",
     "type": "accepted",
     "isFirstAuthor": true,
     "showOnHomepage": true,
     "featuredOrder": 1,
-    "venue": "CVPR 2025",
+    "venue": "IEEE J-STARS 2025",
     "year": "2025",
-    "highlight": "(Oral)",
+    "highlight": "SCI Q2",
     "thumbnail": "assets/publications/placeholder/paper-thumb.png",
     "tags": [
-      { "text": "Paper", "link": "#" },
-      { "text": "Code", "link": "#" },
-      { "text": "Project Page", "link": "#" }
+      { "text": "Paper", "link": "https://ieeexplore.ieee.org/document/11025126" }
     ]
   },
   {
-    "title": "Another Great Research Work on Machine Learning",
-    "authors": "Collaborator A, <strong>Your Name</strong>, Collaborator B",
+    "title": "SATRNet: Self-Attention-Aided Deep Unfolding Tensor Representation Network for Robust Hyperspectral Anomaly Detection",
+    "authors": "<strong>Yang Jing</strong>,Zhao Jianbin, Chen Lu*, Ning Haorui, Li Ying",
+    "type": "accepted",
+    "isFirstAuthor": true,
+    "showOnHomepage": true,
+    "featuredOrder": 2,
+    "venue": "Remote Sensing 2025",
+    "year": "2025",
+    "highlight": "SCI Q2",
+    "thumbnail": "assets/publications/placeholder2/paper-thumb2.png",
+    "tags": [
+      { "text": "Paper", "link": "https://www.mdpi.com/2072-4292/17/18/3137" }
+    ]
+  },
+  {
+    "title": "基于动态字典学习的含噪高光谱图像空谱融合",
+    "authors": "<strong>杨静</strong>, 赵建斌, 陈路*, 池浩田, 闫涛, 陈斌",
+    "type": "accepted",
+    "isFirstAuthor": true,
+    "showOnHomepage": true,
+    "featuredOrder": 3,
+    "venue": "计算机应用 2025",
+    "year": "2025",
+    "highlight": "",
+    "thumbnail": "assets/publications/placeholder3/paper-thumb3.png",
+    "tags": [
+      { "text": "Paper", "link": "https://www.joca.cn/CN/10.11772/j.issn.1001-9081.2025040411" }
+    ]
+  },
+  {
+    "title": "Edge-guided Semi-supervised 6D Pose Estimation with Cross-domain Alignment for Robotic Grasping",
+    "authors": "Chen Lu, Wen Jiajie, Gao Yan, <strong>Yang Jing</strong>, Zhang Chao, An Shan*, Wu Peng",
     "type": "accepted",
     "isFirstAuthor": false,
     "showOnHomepage": true,
-    "featuredOrder": 2,
-    "venue": "NeurIPS 2024",
-    "year": "2024",
-    "highlight": "(Spotlight)",
-    "thumbnail": "assets/publications/placeholder/paper-thumb.png",
+    "featuredOrder": 4,
+    "venue": "Expert Systems With Applications 2026",
+    "year": "2026",
+    "highlight": "Top Journal, SCI Q1",
+    "thumbnail": "assets/publications/placeholder4/paper-thumb4.png",
     "tags": [
-      { "text": "Paper", "link": "#" }
+      { "text": "Paper", "link": "https://www.sciencedirect.com/science/article/pii/S0957417425034955" }
     ]
   },
   {
-    "title": "Preprint Example with Demo Preview",
-    "authors": "<strong>Your Name</strong>, Collaborator C, Collaborator D",
-    "type": "preprint",
-    "isFirstAuthor": true,
-    "showOnHomepage": false,
-    "venue": "Under Review",
-    "thumbnail": "assets/publications/placeholder/paper-thumb.png",
+    "title": "Robotic Grasp Detection Using Structure Prior Attention and Multiscale Features",
+    "authors": "Chen Lu, Niu Mingdi, <strong>Yang Jing*</strong>, Qian Yuhua, Li Zhuomao, Wang Keqi, Yan Tao and Huang Panfeng",
+    "type": "accepted",
+    "isFirstAuthor": false,
+    "showOnHomepage": true,
+    "featuredOrder": 5,
+    "venue": "IEEE TSMC-S 2024",
+    "year": "2024",
+    "highlight": "Top Journal, SCI Q1",
+    "thumbnail": "assets/publications/placeholder5/paper-thumb5.png",
     "tags": [
-      { "text": "Paper", "link": "#" },
-      { "text": "Code", "link": "#" }
+      { "text": "Paper", "link": "https://ieeexplore.ieee.org/document/10660532" }
+    ]
+  },
+  {
+    "title": "Occlusion-aware 6D Pose Estimation with Depth-guided Graph Encoding and Cross-semantic Fusion for Robotic Grasping",
+    "authors": "Liu Jingyang, Lu Zhenyu, Chen Lu*, <strong>Yang Jing</strong> and Yang Chenguang",
+    "type": "accepted",
+    "isFirstAuthor": false,
+    "showOnHomepage": true,
+    "featuredOrder": 6,
+    "venue": "ICRA 2025",
+    "year": "2025",
+    "highlight": "",
+    "thumbnail": "assets/publications/placeholder6/paper-thumb6.png",
+    "tags": [
+      { "text": "Paper", "link": "https://ieeexplore.ieee.org/document/11128248" }
+    ]
+  },
+  {
+    "title": "Towards A Clustering Guided Rule Interpolation for ANFIS Construction",
+    "authors": "<strong>Yang Jing</strong>, Chen Tianhua*, Chen Lu and Zhao Jianbin",
+    "type": "accepted",
+    "isFirstAuthor": true,
+    "showOnHomepage": true,
+    "featuredOrder": 7,
+    "venue": "FUZZ-IEEE 2024",
+    "year": "2024",
+    "highlight": "",
+    "thumbnail": "assets/publications/placeholder7/paper-thumb7.png",
+    "tags": [
+      { "text": "Paper", "link": "https://ieeexplore.ieee.org/abstract/document/10612196" }
+    ]
+  },
+  {
+    "title": "Hierarchical Spatio-spectral Fusion for Hyperspectral Image Super Resolution via Sparse Representation and Pre-trained Deep Model",
+    "authors": "<strong>Yang Jing</strong>, Wu Chanyue, You Tengfei, Wang Dong, Li Ying*, Shang Changjing and Shen Qiang",
+    "type": "accepted",
+    "isFirstAuthor": true,
+    "showOnHomepage": true,
+    "featuredOrder": 8,
+    "venue": "Knowledge-Based Systems 2023",
+    "year": "2023",
+    "highlight": "Top Journal, SCI Q1",
+    "thumbnail": "assets/publications/placeholder8/paper-thumb8.png",
+    "tags": [
+      { "text": "Paper", "link": "https://www.sciencedirect.com/science/article/pii/S0950705122012667" }
+    ]
+  },
+  {
+    "title": "Constructing ANFIS with Sparse Data through Group-Based Rule Interpolation: An Evolutionary Approach",
+    "authors": "<strong>Yang Jing</strong>, Shang Changjing, Li Ying, Li Fangyi and Shen Qiang*",
+    "type": "accepted",
+    "isFirstAuthor": true,
+    "showOnHomepage": true,
+    "featuredOrder": 9,
+    "venue": "IEEE Transactions on Fuzzy Systems 2022",
+    "year": "2022",
+    "highlight": "Top Journal, SCI Q1",
+    "thumbnail": "assets/publications/placeholder9/paper-thumb9.png",
+    "tags": [
+      { "text": "Paper", "link": "https://ieeexplore.ieee.org/abstract/document/9316874" }
+    ]
+  },
+  {
+    "title": "ANFIS Construction With sparse Data via Group Rule Interpolation",
+    "authors": "<strong>Yang Jing</strong>, Shang Changjing, Li Ying, Li Fangyi and Shen Qiang*",
+    "type": "accepted",
+    "isFirstAuthor": true,
+    "showOnHomepage": true,
+    "featuredOrder": 10,
+    "venue": "IEEE Transactions on Cybernetics 2021",
+    "year": "2021",
+    "highlight": "Top Journal, SCI Q1",
+    "thumbnail": "assets/publications/placeholder10/paper-thumb10.png",
+    "tags": [
+      { "text": "Paper", "link": "https://ieeexplore.ieee.org/abstract/document/8913478" }
+    ]
+  },
+  {
+    "title": "A New Approach for Transformation-based Fuzzy Rule Interpolation",
+    "authors": "Chen Tianhua, Shang Changjing, <strong>Yang Jing</strong>, Li Fangyi and Shen Qiang*",
+    "type": "accepted",
+    "isFirstAuthor": false,
+    "showOnHomepage": true,
+    "featuredOrder": 11,
+    "venue": "IEEE Transactions on Fuzzy Systems 2020",
+    "year": "2020",
+    "highlight": "Top Journal, SCI Q1",
+    "tags": [
+      { "text": "Paper", "link": "https://ieeexplore.ieee.org/abstract/document/8886596" }
+    ]
+  },
+  {
+    "title": "Interpolation with Just Two Nearest Neighbouring Weighted Fuzzy Rules",
+    "authors": " Li Fangyi, Shang Changjing, Li Ying, <strong>Yang Jing</strong> and Shen Qiang*",
+    "type": "accepted",
+    "isFirstAuthor": false,
+    "showOnHomepage": true,
+    "featuredOrder": 12,
+    "venue": "IEEE Transactions on Fuzzy Systems 2020",
+    "year": "2020",
+    "highlight": "Top Journal, SCI Q1",
+    "tags": [
+      { "text": "Paper", "link": "https://ieeexplore.ieee.org/abstract/document/8762115" }
+    ]
+  },
+  {
+    "title": "Fuzzy Rule Based Interpolative Reasoning Supported by Attribute Ranking",
+    "authors": " Li Fangyi, Shang Changjing, Li Ying, <strong>Yang Jing</strong> and Shen Qiang*",
+    "type": "accepted",
+    "isFirstAuthor": false,
+    "showOnHomepage": true,
+    "featuredOrder": 13,
+    "venue": "IEEE Transactions on Fuzzy Systems 2018",
+    "year": "2018",
+    "highlight": "Top Journal, SCI Q1",
+    "thumbnail": "assets/publications/placeholder13/paper-thumb13.png",
+    "tags": [
+      { "text": "Paper", "link": "https://ieeexplore.ieee.org/abstract/document/8314721" }
+    ]
+  },
+  {
+    "title": "Image Fusion for Spatial Enhancement of Hyperspectral Image via Pixel Group Based Non-Local Sparse Representation",
+    "authors": "<strong>Yang Jing</strong>, Li Ying*, Jonathan Cheung-Wai Chan and Shen Qiang",
+    "type": "accepted",
+    "isFirstAuthor": true,
+    "showOnHomepage": true,
+    "featuredOrder": 14,
+    "venue": "Remote Sensing 2017",
+    "year": "2017",
+    "highlight": "Top Journal, SCI Q2",
+    "thumbnail": "assets/publications/placeholder14/paper-thumb14.png",
+    "tags": [
+      { "text": "Paper", "link": "https://www.mdpi.com/2072-4292/9/1/53" }
     ]
   }
 ]
