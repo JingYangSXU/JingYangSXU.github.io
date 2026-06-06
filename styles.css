@@ -521,12 +521,21 @@ details summary {
     text-decoration: none;
 }
 
+/*.honor-item {*/
+/*    display: grid;*/
+/*    grid-template-columns: 100px 1fr;*/
+/*    gap: 1.5rem;*/
+/*    align-items: baseline;*/
+/*    margin-bottom: 1.5rem;*/
+/*}*/
 .honor-item {
     display: grid;
-    grid-template-columns: 100px 1fr;
+    /* 将 100px 修改为 130px，给“2025 - 2027”留出足够空间 */
+    grid-template-columns: 130px 1fr;
+    /* 保持或适当加大左右间距 (1.5rem 约等于 24px) */
     gap: 1.5rem;
     align-items: baseline;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.75rem; /* 稍微加大家开各项目之间的上下间距 */
 }
 
 /*.honor-year {*/
@@ -537,12 +546,19 @@ details summary {
 /*    text-align: right;*/
 /*    white-space: nowrap;*/
 /*}*/
+/*.honor-year {*/
+/*    font-weight: 600;*/
+/*    font-size: 0.95rem;*/
+/*    color: #d4a562;*/
+/*    text-align: right;*/
+/*    white-space: nowrap;*/
+/*}*/
 .honor-year {
     font-weight: 600;
     font-size: 0.95rem;
     color: #d4a562;
     text-align: right;
-    white-space: nowrap;
+    white-space: nowrap; /* 确保时间绝对不会因为拥挤而换行 */
 }
 
 .honor-content h3 {
